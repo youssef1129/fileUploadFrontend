@@ -1,5 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  padding: 3rem;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +43,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#file {
+  display: none;
+}
+#path {
+  border-radius: 10px;
+  outline: none;
+  border: navajowhite;
+  padding: 10px;
+  text-align: center;
+}
+.App > div {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: ghostwhite;
+  padding: 1rem;
+  justify-content: center;
+  height: 100%;
+}
+
+#upload {
+  background-color: #abe0ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#save {
+  padding: 10px 15px;
+  background-color: #caffca;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.stores {
+  display: flex;
+  gap: 1rem;
+}
+.stores > * {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
